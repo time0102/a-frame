@@ -12,7 +12,6 @@
         <a-assets>
             <a-asset-item id="gate" src="assets/scene.gltf"></a-asset-item>
             <video id="sphereVid" src="Group%204%20-%20The%20Coronas.mp4"></video>
-            <audio id="audio" src="ad_video1.mp3" preload="auto"></audio>
         </a-assets>
         <a-entity environment="skyColor:blue; skyType:atmosphere; groundColor:green; groundTexture:hills; lighting:distant;"></a-entity>
         <a-camera wasd-controls="acceleration: 300" position="0 3 0">
@@ -35,9 +34,8 @@
 
         <a-box src="https://cdn.glitch.com/22d924bf-3f2c-4222-bad5-9682d70a1f28%2Ftexture2.jpg?v=1591023085135" position="0 7.5 -15.5" height="5" width="8" depth="0.5"></a-box>
 
-        <!-- Music Box -->
-     <a-box data-brackets-id="536" src="button.png" position="5.57186 1.81031 -9.1121" rotation="0 45 0" sound="src: ad_video1.mp3; on: click" material="" geometry=""></a-box>
-
+        <!-- BOX 2 -->
+       <a-entity data-brackets-id="23" class="box" geometry="" material="color: #red" opacity="0.5" position="4.2183 2.0816 -8.84418" rotation="0 2886.6951610227793 0" animation__mouseenter="property: components.material.material.color; type: color; from: red; to: green; startEvents: mouseenter; dur: 500" animation__mouseleave="property: components.material.material.color; type: color; from: green; to: red; startEvents: mouseleave; dur: 500" animation__rotation="property: rotation; to: 0 3000 0; loop: NaN; dur: 1550"></a-entity>
 
         <!-- Videospeher.-->
         <a-link class="link" href="sphere.html" radius="1" position="5 4 -30" title="VIDEOSPHERE" onclick="true"></a-link>
